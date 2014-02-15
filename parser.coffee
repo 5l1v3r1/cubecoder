@@ -10,7 +10,6 @@ parseRubiksString = (str) ->
   try
     return map.getCuboid()
   catch e
-    console.log e
     return null
 
 module.exports =

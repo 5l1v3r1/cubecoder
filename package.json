@@ -1,0 +1,27 @@
+{
+  "name": "cubecoder",
+  "version": "0.0.1",
+  "description": "Create a 1-to-1 mapping from cubes to integers",
+  "dependencies": {
+    "bigint": "0.4.x",
+    "node-cuboids": "0.0.x",
+    "coffee-script": "1.6.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unixpickle/cubecoder.git"
+  },
+  "keywords": [
+    "rubik"
+  ],
+  "author": "Alex Nichol <unixpickle@gmail.com>",
+  "license": "GNU GPL",
+  "bugs": {
+    "url": "https://github.com/unixpickle/cubecoder/issues"
+  },
+  "homepage": "https://github.com/unixpickle/cubecoder"
+}

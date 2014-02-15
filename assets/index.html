@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <style type="text/css">
+    .cube-side {
+      text-align: right;
+    }
+    .side-data input {
+      width: 100px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Encoder</h1>
+    <table id="fields">
+      <tr>
+        <td class="cube-side">Front:</td>
+        <td class="side-data">
+          <input id="face_front" />
+        </td>
+      </tr>
+      <tr>
+        <td class="cube-side">Back:</td>
+        <td class="side-data">
+          <input id="face_back" />
+        </td>
+      </tr>
+      <tr>
+        <td class="cube-side">Top:</td>
+        <td class="side-data">
+          <input id="face_top" />
+        </td>
+      </tr>
+      <tr>
+        <td class="cube-side">Bottom:</td>
+        <td class="side-data">
+          <input id="face_bottom" />
+        </td>
+      </tr>
+      <tr>
+        <td class="cube-side">Right:</td>
+        <td class="side-data">
+          <input id="face_right" />
+        </td>
+      </tr>
+      <tr>
+        <td class="cube-side">Left:</td>
+        <td class="side-data">
+          <input id="face_left" />
+        </td>
+      </tr>
+    </table>
+    <button onclick="window.encodeCube()">Encode Cube</button>
+    <h1>Decoder</h1>
+    Number: <input id="input_number" /><br />
+    <button onclick="window.decodeCube()">Decode Cube</button><br />
+    <div id="metadata"></div>
+  </body>
+</html>
