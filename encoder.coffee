@@ -55,8 +55,8 @@ module.exports = (cuboid) ->
   epCount = 12*11*10*9*8*7*6*5*4*3*2
   
   number = bigint co + coCount * eo
-  number = number.add bigint(coCount * eoCount).mul ep
-  number = number.add bigint(coCount * eoCount).mul epCount * cpnp
+  number = number.add bigint(coCount).mul(eoCount).mul ep
+  number = number.add bigint(coCount).mul(eoCount).mul(epCount).mul cpnp
   hash = number.toString()
   
   return co: co, eo: eo, ep: ep, cp: cp, cpnp: cpnp, hash: hash
